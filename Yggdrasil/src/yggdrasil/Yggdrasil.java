@@ -39,7 +39,7 @@ public class Yggdrasil {
             Log.info("Initializing Yggdrasil");
             InetAddress localhost = InetAddress.getLocalHost();
             List<Nodes> nodes = new ArrayList<>();
-            List<String> reachable = new ArrayList<>(255);
+            List<String> reachable = new ArrayList<>();
             byte[] ip = localhost.getAddress();
             int timeout = 1000;
             for(int i=1; i<=254; i++){
